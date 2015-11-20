@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8"> 
+    <title>Hello World!</title>
+    <script>
+    function openTaskmgr(){
+          var cp = require('child_process');
+          cp.exec("taskmgr");
+    };
+    </script>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    We are using io.js <script>document.write(process.version)</script>
+    and Electron <script>document.write(process.versions['electron'])</script>
+    <hr>
+    <a href="#" onclick="openTaskmgr();return false;">打开任务管理器</a>
+
+  </body>
+</html>
